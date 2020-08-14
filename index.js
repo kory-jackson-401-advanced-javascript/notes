@@ -16,13 +16,10 @@ Otherwise, display a confirmation of the note text that they specified
 
 
 let Input = require('./lib/input.js');
-let notes = require('./lib/notes.js');
-const Notes = require('./lib/notes.js');
+let Notes = require('./lib/notes.js');
 
 
 const input = new Input();
 const note = new Notes(input);
-const run = note.add();
 
-
-run;
+note;
