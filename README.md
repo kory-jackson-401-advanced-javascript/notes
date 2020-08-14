@@ -6,8 +6,9 @@
 
 ### Links and Resources
 
-- [Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/2)
-- [ci/cd](http://xyz.com) (GitHub Actions N/A)
+- [Class 01 Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/2)
+- [Class 02 Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/3)
+- [github Actions](https://github.com/kory-jackson-401-advanced-javascript/notes/actions)
 
 #### How to initialize/run your application (where applicable)
 
