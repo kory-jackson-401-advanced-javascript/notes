@@ -8,6 +8,7 @@
 
 - [Class 01 Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/2)
 - [Class 02 Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/3)
+- [Class 03 Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/4)
 - [github Actions](https://github.com/kory-jackson-401-advanced-javascript/notes/actions)
 
 #### How to initialize/run your application (where applicable)
@@ -25,4 +26,5 @@ None
 
 #### UML
 
-Link to an image of the UML for your application and response to events
+#### Class 03 UML
+![](Assets/class03_UML.png)
