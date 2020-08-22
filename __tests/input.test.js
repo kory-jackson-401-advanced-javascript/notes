@@ -7,7 +7,8 @@ const minimist = require('minimist');
 minimist.mockImplementation(() => {
   return{
     _: [],
-    add: 'I am a note'
+    add: 'I am a note',
+    category: 'notes'
   };
 });
 
@@ -22,11 +23,8 @@ describe('testing if input is received', () => {
 
   it('figures out which action is used', () => {
     let input = new Input();
+    console.log(input.command)
     expect(input.command.action).toEqual('add');
   })
 
-  it('validates the type of as string', () => {
-    let input = new Input();
-    expect(input.valid()).toBe(true);
-  })
 })

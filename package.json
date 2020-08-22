@@ -23,7 +23,10 @@
   },
   "homepage": "https://github.com/kory-jackson-401-advanced-javascript/notes#readme",
   "dependencies": {
+    "@code-fellows/supergoose": "^1.0.11",
     "jest": "^26.4.0",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "mongoose": "^5.10.0",
+    "superagent": "^6.0.0"
   }
 }
