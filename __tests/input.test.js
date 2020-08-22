@@ -23,7 +23,6 @@ describe('testing if input is received', () => {
 
   it('figures out which action is used', () => {
     let input = new Input();
-    console.log(input.command)
     expect(input.command.action).toEqual('add');
   })
 
