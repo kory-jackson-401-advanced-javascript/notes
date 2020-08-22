@@ -13,11 +13,27 @@ Otherwise, display a confirmation of the note text that they specified
 
 'use strict';
 
-
+const mongoose = require('mongoose');
+const MONGODB_URI = 'mongodb://localhost:27017';
 
 let Input = require('./lib/input.js');
 let Notes = require('./lib/notes.js');
 
+mongoose.connect(MONGODB_URI, { 
+    useNewUrlParser: true, 
+    useUnifiedTopology: true 
+});
 
 const input = new Input();
-const note = new Notes(input);
+const note = new Notes();
+
+const runApp = (record) => {
+    if (record.command.action) {
+        note.execute(record.command)
+    }
+    else {
+        console.error('Invalid info passed through')
+    }
+}
+
+runApp(input);
