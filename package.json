@@ -1,7 +1,7 @@
 {
-  "name": "notes",
-  "version": "1.0.0",
-  "description": "",
+  "name": "dirrbick-notes",
+  "version": "1.0.2",
+  "description": "This is a class project to create notes and retrieve in a backend mongo database",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -16,17 +16,21 @@
     "url": "git+https://github.com/kory-jackson-401-advanced-javascript/notes.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Kory Jackson",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kory-jackson-401-advanced-javascript/notes/issues"
   },
   "homepage": "https://github.com/kory-jackson-401-advanced-javascript/notes#readme",
   "dependencies": {
     "@code-fellows/supergoose": "^1.0.11",
+    "dotenv": "^8.2.0",
     "jest": "^26.4.0",
     "minimist": "^1.2.5",
     "mongoose": "^5.10.0",
     "superagent": "^6.0.0"
+  },
+  "bin": {
+    "notes": "index.js"
   }
 }

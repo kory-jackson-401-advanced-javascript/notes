@@ -1,20 +1,10 @@
-/*
-As a user, I want to be able to call the application using command line standard syntax, indicating the text of a note I wish to add so that the system will eventually be able to save this note.
-As a user, I expect that the application will confirm my intent.
-
-The application must be able to parse command line arguments
-e.g.
-The --add (or -a) is used to tell your application that the user wants to ADD a new note
-All of the text following the -a, within quotes is the text of the note itself
-If the user doesn’t provide a valid argument (-a), show them an error
-If the user specifies the flag, but doesn’t provide any text, show them an error
-Otherwise, display a confirmation of the note text that they specified
-*/
+#!/usr/bin/env node
 
 'use strict';
+require('dotenv').config();
 
 const mongoose = require('mongoose');
-const MONGODB_URI = 'mongodb://localhost:27017';
+const MONGODB_URI = process.env.MONGODB_URI;
 
 let Input = require('./lib/input.js');
 let Notes = require('./lib/notes.js');
@@ -32,8 +22,24 @@ const runApp = (record) => {
         note.execute(record.command)
     }
     else {
-        console.error('Invalid info passed through')
+        help();
     }
+}
+
+function help() {
+    console.error(`
+    Invalid info arguments.
+
+    --add or -a "note" -category or -c "category" to add note in specified category
+    
+    --list or -l to list all inside of database
+
+    --list or -l --category or -c "category" to list all notes in specific category
+
+    --delete or -d "id" you must enter the id after arguments to delete note. Run --list to see id of note you want to delete.
+    
+    `)
+    mongoose.disconnect();
 }
 
 runApp(input);

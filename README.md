@@ -9,20 +9,21 @@
 - [Class 01 Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/2)
 - [Class 02 Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/3)
 - [Class 03 Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/4)
-- [github Actions](https://github.com/kory-jackson-401-advanced-javascript/notes/actions)
+- [Class 04 Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/5)
 
 #### How to initialize/run your application (where applicable)
 
-- Clone Repo down
-- From Repo directory run **node index.js --add/-a "Whatever you want as a string"**
-- Will return **Adding Note: "Whatever you typed"**
-- Error will occur if nothing is filled out for either section.
-
-#### How to use your library (where applicable)
+- Ensure you have NPM installed on your computer
+- To install run **npm i -g dirrbick-notes**
+- Once installed you can use any of the following commands
+    - **notes --add/-a "your note" --category/-c "the category you want"**: To add your note run this command along with your specified category.
+    - **notes --list/-l**: lists all of your notes.
+    - **notes --list/-l --category/-c "category"**: lists specified notes in category 
+    - **notes --delete/-d "note id"**: list your notes and if you want to delete one, copy the id and run this command. It will then be removed.
 
 #### Tests
 
-None
+- [github Actions](https://github.com/kory-jackson-401-advanced-javascript/notes/actions)
 
 #### UML
 
