@@ -10,6 +10,7 @@
 - [Class 02 Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/3)
 - [Class 03 Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/4)
 - [Class 04 Submission PR](https://github.com/kory-jackson-401-advanced-javascript/notes/pull/5)
+- [JSDocs](./docs)
 
 #### How to initialize/run your application (where applicable)
 
